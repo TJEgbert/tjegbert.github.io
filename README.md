@@ -23,7 +23,7 @@ We used Node.js to be the foundation of the website while using Express to handl
 
 #### Program 2 - Node & Express Site With File Storage
 ![Screenshot of user information page](/assets/images/four_in_a_row_1.png)
-![Screenshot of user display table](/assets/images/four_in_a_row_2.PNG)
+![Screenshot of user display table](/assets/images/four_in_a_row_2.png)
 
 This assignment was to make a playable four in a row game using Node.js, Express, and React.  This assignment introduces us to React which is used to make the user interface on the front end.  React makes it simple to create HTML pages using props which are like object in other class-based coding languages but just like Node.js and Express the syntax is hard to get used to.
 
