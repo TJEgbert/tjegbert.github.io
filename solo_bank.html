@@ -1,144 +1,65 @@
 <!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>Connect Four</title>
+		<title>Solo Banking App</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+			
 	</head>
 	<body class="is-preload">
+		<div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="node_express.html">Node & Express Site With File Storage</a></li>
+				<li><a href="connectFour.html">Connect Four</a></li>
+				<li><a href="solo_bank.html">Solo Banking App</a></li>
+				<li><a href="hangman.html">Hangman</a></li>
+				<li><a href="group_bank.html">Group Banking App</a></li>
+			</ul>
+		</div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<div>
+			<h2><a href="https://github.com/TJEgbert/TJEgbert.github.io/tree/main/Solo%20Banking%20App">
+				Solo Banking App
+			</a></h2>
+			<p>
+				This was a combination of two assignments where we used the whole MERN stack to handle a banking web application.  
+				The first assignment was how to use Mongo and the RESTful API to handle the backend and communication with the frontend.  
+				Then the next assignment was getting the front end working with the backend we did in the previous assignment. 
+				 As well as adding Sessions to track when the user is logged in or out.
+			</p>
 
-				<!-- Header -->
-				<!-- Note: The "styleN" class below should match that of the banner element. -->
-					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>Trevor Egbert</strong> <span></span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+			<p>
+				For the first assignment with the focus on backend mainly getting the routes working and getting the Mongo database set up.  
+				Mongo being documented-oriented database made it easy to save JSON object into a database.  
+				Getting the database set up in code was relatively easy since MongoDB already had most of the code needed to make work in the 
+				project.  
+				You just must switch a couple of things, and it was good to go.  
+				One of challenges was getting used to how to make queries to the database in the routes.  
+				Having the semester prior I had taken the advance database class we worked with MongoDB a little bit, 
+				so I was familiar with how to make the queries.  
+				But since it&#39;s in code it works differently so it took a little bit to get used to that and start getting the data back I wanted.  
+				The other challenge was getting the information from the routes to save into the database.  
+				This is where RESTful API comes into play and again it comes down to syntax.  
+				Learning how RESTful wanted the data in the first place and how it wanted to return the data.  
+				This just took a little bit of practice to remember syntax but after a couple of routes I had it down.
+			</p>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="node_express.html">Node & Express Site With File Storage</a></li>
-							<li><a href="connectFour.html">Connect Four</a></li>
-							<li><a href="solo_bank.html">Solo Banking App</a></li>
-							<li><a href="hangman.html">Hangman</a></li>
-							<li><a href="group_bank.html">Group Banking App</a></li>
-						</ul>
-					</nav>
-
-				<!-- Banner -->
-				<!-- Note: The "styleN" class below should match that of the header element. -->
-					<section id="banner" class="style2">
-						<div class="inner">
-							<span class="image">
-								<img src="images/pic07.jpg" alt="" />
-							</span>
-							<header class="major">
-								<h1>Game Database</h1>
-							</header>
-							<div class="content">
-								<p>A user generated database that as the user inputs the more searchable it becomes.</p>
-							</div>
-						</div>
-					</section>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h2>Why I made it</h2>
-									</header>
-									<p>
-										I like most gamer adults have a huge back log of games stretching between many different platforms and some are bound to get forgotten.  
-										That was the main idea going into making a program where I could enter my game collection and have it easily searchable and updates 
-										as I put more games into it.  That was until I asked my brother for his opinion since we are in the same boat.
-										  This was when the idea of using an API came from to help fill out some of the information about the game for you.  
-										  Just from adding in the API this went from a week project into almost two.  Also, I need more projects for my portfolio.
-										  You can go straight to the repository by <a href="https://github.com/TJEgbert/GameDatabase">clicking here.</a>
-									</p>
-
-								</div>
-							</section>
-							
-
-						<!-- Two -->
-
-							<section id="two" class="spotlights">
-								<section>
-									<img src="images/ClientInfo.PNG" alt="Picture of Client Info Window" data-position="top center"/>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Client Info Screen </h3>
-											</header>
-											<p>
-												This window allows the user to enter in the Client ID and Client Info you get from Twitch in the database.  
-												This allows the user to be able to connect to the IGDB API later in the Add Game Window.  
-												This was the first hurdle of the project was getting the access token needed to be able to connect to IGDB API.  
-												With the Client ID and Secret you need to make a Post to Twitch so they can send back the access token and the expiration date.  
-												To achieve this, I ended up using RestEase to make the interface and Post with the information to Twitch.  
-												From there I used NewtonSoft.Json to then deserialized the returning .Json.  
-												This was one of the first big hurdles of the program was getting this all to work here and the Add Game Window.  
-												With no prior knowledge I jumped into the RestEase documentation to figure it out.  
-												After reading it all I jumped into the API documentation to see what they were expected to receive.  
-												They expected Post with the particle path with ClientID and Secret.  
-												This was simple enough to do with RestEase make a simple Post with the path once I knew what I was doing.  
-												From there it all went to the Microsoft Access files to store for whenever the program needed it use it later.
-											</p>
-										</div>
-									</div>
-								</section>
-								<section>
-										<img src="images/MainWindow.PNG" alt="Picture of Client Info Window Main Window" data-position="center center" />
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Main window</h3>
-											</header>
-											<p>
-												This was the window that gave me the least trouble out of all of them.  
-												It&#x27;s also the window that I had put the most thought into before I started to code since nothing huge was added on to it later.  
-												All this window is doing is acting as an interface with database.  
-												It displays everything the database has in the Game table, and the search filters are generated from the database itself.  
-												My favorite moment when I was coding this window was making it so the user could update the records right from there.  
-												I saw you could enable editing on data grid, so I had it do that, but I needed to tell if something was edited.  
-												This was where the observable collection worked so well.  
-												I ended up having a bool on the game object that would be checked true if it was edited on the data grid.  
-												Once the user clicks save it removes the entry and puts it back into the database with the updated information.  
-												The thing that shocked me the most was it worked on the first try.
-											</p>
-										</div>
-									</div>
-								</section>
-
-								<!-- Add new project when it is needs to be updated here-->
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<p>
+				For the next assignment it was putting everything together in the MERN stack and adding sessions into it.  
+				MERN stands for MongoDB, Express, React, and Node.js while sessions is a way to track a user throughout a website.  
+				Sessions are more commonly known as cookies.  
+				This wasn&#39;t too bad since the backend was done other than sessions it was easy to make the front end and get the information 
+				sent to the backend.  
+				Like I mentioned for the first assignment it took a little to figure out how exactly the RESTful API wanted the information
+				 sent to is so that took a me a little bit of time to figure out.  
+				 The other was figuring out once the session was set was how to include that into a request to the backend 
+				 so the backend could use that to get the user information from the database.  
+				 Many of hours debugging and doing research to figure out all I need to do in the POST or GET was add “include credentials” 
+				 and then it was included in the request in a easily accessible req.session.username.
+			</p>
+			<a href="https://github.com/TJEgbert/TJEgbert.github.io/tree/main/Solo%20Banking%20App">Repository</a>
+		</div>
 
 	</body>
 </html>
