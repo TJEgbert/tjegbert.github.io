@@ -21,5 +21,8 @@ It is a program that displays assignment numbers based on start point, end point
 ## [Math Game](https://github.com/TJEgbert/Math_Game)
 This was my favorite assignment from my Object-Oriented Windows Application class.  It’s a simple math game with Pokémon theme.
 
+## [Unity Projects](https://github.com/TJEgbert/Past_Class_Work/tree/main/CS%204640%20Foundations%20Game%20Development)
+These are my midterm and final projects for my intro game development class.  These are projects that I had the most creative freedom, so they ended up being my favorite projects from this class.
+
 ## [Past School Work](https://github.com/TJEgbert/Past_Class_Work)
 This is all my coding work from my time at college.
