@@ -1,5 +1,5 @@
 # Repositories index  
-Welcome and thank you for taking the time to look at GitHub here are the links to all my repositories. If you would like to see more details about each you can find a write up on the [project page on my website](https://tjegbert.github.io/pages/projects.html).
+Welcome and thank you for taking the time to look at GitHub here are the links to all my repositories.
 
 ## [Click here to go to my GitHub Page.](https://github.com/TJEgbert)
 
